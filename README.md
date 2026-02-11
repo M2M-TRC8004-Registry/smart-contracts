@@ -6,21 +6,21 @@ This repository contains the source code and ABIs for the deployed contracts. It
 
 ## Deployed Contracts
 
-### Shasta Testnet
-
-| Contract | Address |
-|----------|---------|
-| EnhancedIdentityRegistry | [`41ccfcc5e2d680eeb8cba7ddade77d55b858251938`](https://shasta.tronscan.org/#/contract/41ccfcc5e2d680eeb8cba7ddade77d55b858251938) |
-| ValidationRegistry | [`415ddbda1e29b6b3ec31b8d939c9c0a46638bebe3f`](https://shasta.tronscan.org/#/contract/415ddbda1e29b6b3ec31b8d939c9c0a46638bebe3f) |
-| ReputationRegistry | [`4184c5d3cc5a5148b2799103b39b5ae3ae4f36ba6b`](https://shasta.tronscan.org/#/contract/4184c5d3cc5a5148b2799103b39b5ae3ae4f36ba6b) |
-
 ### Mainnet
 
 | Contract | Address |
 |----------|---------|
-| EnhancedIdentityRegistry | *Coming soon* |
-| ValidationRegistry | *Coming soon* |
-| ReputationRegistry | *Coming soon* |
+| EnhancedIdentityRegistry | [`TYmmnmgkxteBvH8u8LAfb8sCcs1Eph2tk2`](https://tronscan.org/#/contract/TYmmnmgkxteBvH8u8LAfb8sCcs1Eph2tk2) |
+| ValidationRegistry | [`TY9sqKiWBhZP6aMdjarcViyD2cudMAGfGn`](https://tronscan.org/#/contract/TY9sqKiWBhZP6aMdjarcViyD2cudMAGfGn) |
+| ReputationRegistry | [`TU8PmqF3mZoEGE97Se5oSgNo6bUs4VrswB`](https://tronscan.org/#/contract/TU8PmqF3mZoEGE97Se5oSgNo6bUs4VrswB) |
+
+### Shasta Testnet
+
+| Contract | Address |
+|----------|---------|
+| EnhancedIdentityRegistry | [`TUf5fAgpLrR6YM3P9oX9GNG1tGV3VcyPE3`](https://shasta.tronscan.org/#/contract/TUf5fAgpLrR6YM3P9oX9GNG1tGV3VcyPE3) |
+| ValidationRegistry | [`TJXVDV7hpsTSSz3QBCJdw99eFvTWUjxph6`](https://shasta.tronscan.org/#/contract/TJXVDV7hpsTSSz3QBCJdw99eFvTWUjxph6) |
+| ReputationRegistry | [`TN5FBfXASyxrjUa9V73Hfme2pY9yWh6Rsh`](https://shasta.tronscan.org/#/contract/TN5FBfXASyxrjUa9V73Hfme2pY9yWh6Rsh) |
 
 ---
 
