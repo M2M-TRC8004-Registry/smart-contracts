@@ -1,0 +1,139 @@
+[
+  {
+    "inputs": [
+      { "name": "identityRegistryAddress", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "client", "type": "address" },
+      { "indexed": true, "name": "feedbackIndex", "type": "uint256" },
+      { "indexed": false, "name": "sentiment", "type": "uint8" }
+    ],
+    "name": "FeedbackGiven",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "feedbackIndex", "type": "uint256" }
+    ],
+    "name": "FeedbackRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "feedbackIndex", "type": "uint256" },
+      { "indexed": true, "name": "responder", "type": "address" }
+    ],
+    "name": "ResponseAppended",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "identityRegistry",
+    "outputs": [{ "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "", "type": "uint256" },
+      { "name": "", "type": "address" }
+    ],
+    "name": "feedbackCountByClient",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "agentId", "type": "uint256" },
+      { "name": "feedbackText", "type": "string" },
+      { "name": "sentiment", "type": "uint8" }
+    ],
+    "name": "giveFeedback",
+    "outputs": [{ "name": "feedbackIndex", "type": "uint256" }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "agentId", "type": "uint256" },
+      { "name": "feedbackIndex", "type": "uint256" }
+    ],
+    "name": "revokeFeedback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "agentId", "type": "uint256" },
+      { "name": "feedbackIndex", "type": "uint256" },
+      { "name": "responseText", "type": "string" }
+    ],
+    "name": "appendResponse",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "agentId", "type": "uint256" }],
+    "name": "getFeedbackCount",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "agentId", "type": "uint256" },
+      { "name": "feedbackIndex", "type": "uint256" }
+    ],
+    "name": "getFeedback",
+    "outputs": [
+      { "name": "client", "type": "address" },
+      { "name": "feedbackText", "type": "string" },
+      { "name": "sentiment", "type": "uint8" },
+      { "name": "timestamp", "type": "uint256" },
+      { "name": "revoked", "type": "bool" },
+      { "name": "responseCount", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "agentId", "type": "uint256" },
+      { "name": "feedbackIndex", "type": "uint256" }
+    ],
+    "name": "getFeedbackResponses",
+    "outputs": [
+      { "name": "responses", "type": "string[]" },
+      { "name": "responseTimestamps", "type": "uint256[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "agentId", "type": "uint256" }],
+    "name": "getSummary",
+    "outputs": [
+      { "name": "total", "type": "uint256" },
+      { "name": "active", "type": "uint256" },
+      { "name": "revoked", "type": "uint256" },
+      { "name": "positive", "type": "uint256" },
+      { "name": "neutral", "type": "uint256" },
+      { "name": "negative", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

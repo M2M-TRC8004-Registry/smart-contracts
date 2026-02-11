@@ -1,0 +1,27 @@
+{
+  "name": "m2m-trc8004-smart-contracts",
+  "version": "1.0.0",
+  "description": "M2M TRC-8004 Agent Registry Smart Contracts on TRON",
+  "scripts": {
+    "compile": "tronbox compile",
+    "migrate:shasta": "tronbox migrate --network shasta",
+    "migrate:nile": "tronbox migrate --network nile",
+    "migrate:mainnet": "tronbox migrate --network mainnet",
+    "test": "tronbox test",
+    "console:shasta": "tronbox console --network shasta",
+    "console:mainnet": "tronbox console --network mainnet"
+  },
+  "keywords": [
+    "tron",
+    "blockchain",
+    "smart-contracts",
+    "agent-registry",
+    "trc8004"
+  ],
+  "author": "TRC-8004 Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "tronbox": "^3.1.0",
+    "dotenv": "^16.0.0"
+  }
+}

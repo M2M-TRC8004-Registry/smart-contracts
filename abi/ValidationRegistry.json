@@ -1,0 +1,164 @@
+[
+  {
+    "inputs": [
+      { "name": "identityRegistryAddress", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "requestId", "type": "bytes32" },
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "validator", "type": "address" },
+      { "indexed": false, "name": "requester", "type": "address" }
+    ],
+    "name": "ValidationRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "requestId", "type": "bytes32" },
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "validator", "type": "address" }
+    ],
+    "name": "ValidationCompleted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "requestId", "type": "bytes32" },
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "validator", "type": "address" }
+    ],
+    "name": "ValidationRejected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "requestId", "type": "bytes32" },
+      { "indexed": true, "name": "agentId", "type": "uint256" },
+      { "indexed": true, "name": "requester", "type": "address" }
+    ],
+    "name": "ValidationCancelled",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "identityRegistry",
+    "outputs": [{ "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "", "type": "address" }],
+    "name": "requesterNonce",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "agentId", "type": "uint256" },
+      { "name": "validator", "type": "address" },
+      { "name": "requestURI", "type": "string" },
+      { "name": "requestDataHash", "type": "bytes32" }
+    ],
+    "name": "validationRequest",
+    "outputs": [{ "name": "requestId", "type": "bytes32" }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "requestId", "type": "bytes32" }],
+    "name": "cancelRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "requestId", "type": "bytes32" },
+      { "name": "resultURI", "type": "string" },
+      { "name": "resultHash", "type": "bytes32" }
+    ],
+    "name": "completeValidation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "requestId", "type": "bytes32" },
+      { "name": "resultURI", "type": "string" },
+      { "name": "reasonHash", "type": "bytes32" }
+    ],
+    "name": "rejectValidation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "requestId", "type": "bytes32" }],
+    "name": "getRequest",
+    "outputs": [
+      {
+        "components": [
+          { "name": "requestId", "type": "bytes32" },
+          { "name": "requestDataHash", "type": "bytes32" },
+          { "name": "requester", "type": "address" },
+          { "name": "validator", "type": "address" },
+          { "name": "agentId", "type": "uint256" },
+          { "name": "requestURI", "type": "string" },
+          { "name": "timestamp", "type": "uint256" },
+          { "name": "status", "type": "uint8" },
+          { "name": "resultURI", "type": "string" },
+          { "name": "resultHash", "type": "bytes32" },
+          { "name": "completedAt", "type": "uint256" }
+        ],
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "requester", "type": "address" }],
+    "name": "getRequesterRequests",
+    "outputs": [{ "name": "", "type": "bytes32[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "validator", "type": "address" }],
+    "name": "getValidatorRequests",
+    "outputs": [{ "name": "", "type": "bytes32[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "agentId", "type": "uint256" }],
+    "name": "getAgentRequests",
+    "outputs": [{ "name": "", "type": "bytes32[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "agentId", "type": "uint256" }],
+    "name": "getSummaryForAgent",
+    "outputs": [
+      { "name": "total", "type": "uint256" },
+      { "name": "pending", "type": "uint256" },
+      { "name": "completed", "type": "uint256" },
+      { "name": "rejected", "type": "uint256" },
+      { "name": "cancelled", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
