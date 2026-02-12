@@ -17,7 +17,7 @@ The goal is full interface-level compatibility with ERC-8004 while providing pra
 
 ## Current State
 
-TRC-8004 is currently deployed on TRON Shasta testnet with three contracts:
+TRC-8004 is currently deployed on TRON mainnet and Shasta testnet with three contracts:
 
 - **EnhancedIdentityRegistry** — ERC-721 based agent identity with on-chain metadata
 - **ReputationRegistry** — Sentiment-based feedback with on-chain text storage and response threading
