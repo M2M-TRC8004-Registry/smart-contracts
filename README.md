@@ -171,7 +171,6 @@ smart-contracts/
 - Event emission for all state changes
 - Safe ERC-721 transfers with receiver check
 - Agent existence validated across all registries
-- External security audit recommended before mainnet
 
 ## Resources
 
