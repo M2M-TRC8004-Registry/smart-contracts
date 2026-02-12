@@ -4,6 +4,12 @@ Solidity smart contracts for the M2M TRC-8004 Machine-to-Machine Agent Registry 
 
 This repository contains the source code and ABIs for the deployed contracts. It is intended as a **reference** for developers integrating with the M2M registry via the API or SDK.
 
+## TRC-8004 Roadmap (2026-02-12)
+
+TRC-8004 is becoming a full superset of ERC-8004 — compatible at every interface, with extensions where the base standard falls short. See the **[TRC-8004 Roadmap](TRC-8004-Roadmap.md)** for the full specification and planned changes.
+
+---
+
 ## Deployed Contracts
 
 ### Mainnet
