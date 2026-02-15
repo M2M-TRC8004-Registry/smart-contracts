@@ -452,40 +452,6 @@ Minimal ABI files (interface-only, no bytecode) are provided in the `abi/` direc
 - `abi/ReputationRegistry.json`
 - `abi/IncidentRegistry.json`
 
-## Technical Details
-
-- **Solidity**: 0.8.20
-- **EVM version**: Paris
-- **Compiler optimization**: Enabled, 200 runs, `viaIR: true`
-- **Toolchain**: TronBox
-- **Token standard**: ERC-721 (EnhancedIdentityRegistry)
-
-## Project Structure
-
-```
-smart-contracts/
-├── abi/
-│   ├── EnhancedIdentityRegistry.json    # Minimal ABI (interface only)
-│   ├── ValidationRegistry.json          # Minimal ABI (interface only)
-│   ├── ReputationRegistry.json          # Minimal ABI (interface only)
-│   └── IncidentRegistry.json            # Minimal ABI (interface only)
-├── contracts/
-│   ├── EnhancedIdentityRegistry.sol     # Agent NFTs (ERC-721)
-│   ├── ValidationRegistry.sol           # Validation workflow
-│   ├── ReputationRegistry.sol           # Feedback & reputation
-│   └── IncidentRegistry.sol             # Incident reporting
-├── migrations/
-│   ├── 2_deploy_contracts.js            # Deploy Identity + Validation + Reputation
-│   ├── 3_deploy_remaining.js            # Deploy against existing Identity
-│   └── 4_deploy_incident.js             # Deploy IncidentRegistry
-├── .env.example                         # Environment template
-├── .gitignore
-├── LICENSE
-├── package.json
-├── README.md
-└── tronbox.js.example                   # TronBox config template
-```
-
 ## Security
 
 **Core protections**:
