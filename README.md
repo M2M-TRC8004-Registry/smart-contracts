@@ -284,10 +284,10 @@ summary = reputation.functions.getSummary(1)  # (total, active, revoked, positiv
 
 | Contract | Address |
 |----------|---------|
-| EnhancedIdentityRegistry | [`TFKNqk9bjwWp5uRiiGimqfLhVQB8jSxYi7`](https://shasta.tronscan.org/#/contract/TFKNqk9bjwWp5uRiiGimqfLhVQB8jSxYi7) |
-| ValidationRegistry | [`TPgGWWyUdxNryUCN49TdT4b3F4WB3Edr16`](https://shasta.tronscan.org/#/contract/TPgGWWyUdxNryUCN49TdT4b3F4WB3Edr16) |
-| ReputationRegistry | [`TRaYogyr2qc7WgsmuVF5Js39aCmoG7vZrA`](https://shasta.tronscan.org/#/contract/TRaYogyr2qc7WgsmuVF5Js39aCmoG7vZrA) |
-| IncidentRegistry | [`TPB59NFdypBpkJtWH7yE8XenKrdT1Q4g4s`](https://shasta.tronscan.org/#/contract/TPB59NFdypBpkJtWH7yE8XenKrdT1Q4g4s) |
+| EnhancedIdentityRegistry | [`TFjkYo3ymRoSk1zp2vNqbddRsY7UzQWbve`](https://shasta.tronscan.org/#/contract/TFjkYo3ymRoSk1zp2vNqbddRsY7UzQWbve) |
+| ValidationRegistry | [`TMKi3HWmtoBnAMNnoJ2wyFdYmXuMRHTp3j`](https://shasta.tronscan.org/#/contract/TMKi3HWmtoBnAMNnoJ2wyFdYmXuMRHTp3j) |
+| ReputationRegistry | [`TULtprdriMpQNpGNAJe9ceD8JrN3GH31tL`](https://shasta.tronscan.org/#/contract/TULtprdriMpQNpGNAJe9ceD8JrN3GH31tL) |
+| IncidentRegistry | [`TV8GvfDNzrhj76aqT9XM522KnYtaDLik3f`](https://shasta.tronscan.org/#/contract/TV8GvfDNzrhj76aqT9XM522KnYtaDLik3f) |
 
 ---
 
