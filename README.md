@@ -1,5 +1,7 @@
 # M2M TRC-8004 Agent Registry — Smart Contracts
 
+> **Note:** M2M has migrated to [Bank of AI's TRC-8004 contracts](https://github.com/BofAI/contracts) as the canonical on-chain deployment. This repository is now a reference archive. Selected improvements from these contracts will be proposed upstream to BofAI via pull requests.
+
 On-chain identity, reputation, validation, and incident reporting for AI agents on TRON. Built on [ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) with practical extensions.
 
 ## What is TRC-8004?
